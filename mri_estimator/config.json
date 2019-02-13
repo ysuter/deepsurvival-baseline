@@ -1,0 +1,25 @@
+{
+    "config": {
+        "batch_size": 10,
+        "batch_size_eval": 10,
+        "checkpoint_dir": "checkpoints_fullaug/%m-%t",
+        "checkpoint_keep": 3,
+        "checkpoint_save_interval": 1800,
+        "data_augment_transform": "data.preprocess.RandomRotateShiftTransform:1:15",
+        "epochs": 500,
+        "hdf_file": "out/datasetwlabels_normit4095_v5.h5",
+        "learning_rate": 1e-05,
+        "learning_rate_decay_rate": 0.8,
+        "learning_rate_decay_steps": 100,
+        "log_eval_num_epoch": 1,
+        "log_num_epoch": 5,
+        "model": "model.alexnet.conv_net_alexnet_modV7_3d",
+        "optimizer": "Adam",
+        "subjects_train_val_test_file": "subjects_split0_val.txt",
+        "visualize_layer_num_epoch": 10
+    },
+    "meta": {
+        "type": "",
+        "version": 1
+    }
+}
